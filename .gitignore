@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.dsh-orchestrator-bridge/
+.tmp/
+*.log
+*.tgz
+*.zip
+.DS_Store
+coverage/

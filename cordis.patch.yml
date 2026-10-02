@@ -1,0 +1,11 @@
+- insert:
+    - id: orchestrator-bridge
+      name: 'dsh-orchestrator-bridge'
+      config:
+        # Run setup.mjs to generate this row with absolute workspace paths.
+        # An unconfigured bundle stays disabled and logs the missing settings.
+        provider: deepseek-account
+        model: deepseek-flash
+        reasoningEffort: max
+        maxTokens: 8192
+        maxParallel: 2

@@ -1,0 +1,47 @@
+{
+  "name": "dsh-orchestrator-bridge",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Bounded DeepSeek Harness workers exposed to a local Codex orchestrator through MCP.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "jobs.js",
+    "runner.js",
+    "server.js",
+    "mcp.mjs",
+    "setup.mjs",
+    "selftest.mjs",
+    "*.test.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "ORCHESTRATOR.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test *.test.mjs",
+    "selftest": "node selftest.mjs",
+    "setup": "node setup.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "mcp",
+    "codex",
+    "orchestration"
+  ]
+}
